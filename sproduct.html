@@ -13,54 +13,49 @@
    
     <div id="navbar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a class="active"  href="about.html">About</a></li>
+        <li><a class="active" href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="Contact.html">Contact</a></li>
         <li><a href="Cart.html"> <i class="fa-solid fa-bag-shopping" style="color: #8f29e2;"></i></a></li>
     </section>
-    <section id="about-header" class="aboutimg">
-        <h2>KnowUs</h2>
-        <p>Unveiling Elegance and Style</p><br>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" alt="" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+            
+        </div>
+        <div class="single-pro-details">
+            <h6>Home/ Kurties</h6>
+            <h4>Trendy women's collections</h4>
+            <h2>Starts from
+                   $ 2.40 - $ 5.0 </h2>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>The purely cotton kurties with high quality on low price  </span>
+        </div>
     </section>
-    <section id="about-head" class="section-p1">
-    <img src="img/banner/b16.jpg">
-    <div>
-        <h2>Who we are???</h2>
-        <p>At Shopping Cart we're passionate about helping you find the dress of your dreams.
-             Whether you're preparing for a special occasion, a night out on the town, a formal event, or just want to
-              update your wardrobe, we've got you covered.
-              Step into a world of elegance and style with our carefully curated collection of dresses. From timeless 
-              classics to the latest fashion trends, our range spans across various styles, colors, and sizes to cater
-             to every taste and body type.</p>
-        <p>Stay ahead of the fashion curve with our dresses that reflect the latest runway trends and styles.</p>
-        <br>
-        <marquee style="width: 100%; color: #8f29e2;">We prioritize quality in every stitch. Our dresses are crafted from premium fabrics
-            to ensure comfort and durability.</marquee>
-    </div>
 
-    </section> <br>
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/featured/f1.png" alt="" style="height:120px; width:120px">
-            <h6 style="color: black;">Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/featured/f2.png" alt="" style="height:120px; width:120px">
-            <h6 style="color: black;">Online order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/featured/f3.png" alt="" style="height:120px; width:120px">
-            <h6 style="color: black;">Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/featured/f4.png" alt="" style="height:120px; width:120px">
-            <h6 style="color: black;">Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="img/featured/f5.png" alt="" style="height:120px; width:120px">
-            <h6 style="color: black;">Support</h6>
-        </div>
-    </section><br>
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign up for Newsletter</h4>
@@ -68,11 +63,9 @@
         </div>
         <div class="form">
             <input type="text" placeholder="Your e-mail address">
-          <a href="login.html"><button><a href="login.html">Sign-Up</button></a>
+            <button href="Login.html">Sign-Up</button>
         </div>
     </section>
-
-   
     <script src="script.js"></script>
     </div>
     <footer class="section-p1">
@@ -125,5 +118,21 @@
             </div>
         
     </footer>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg=document.getElementsByClassName("small-img");
+        smallimg[0].onclick=function(){
+            MainImg.src=smallimg[0].src;
+        }
+        smallimg[1].onclick=function(){
+            MainImg.src=smallimg[1].src;
+        }
+        smallimg[2].onclick=function(){
+            MainImg.src=smallimg[2].src;
+        }
+        smallimg[3].onclick=function(){
+            MainImg.src=smallimg[3].src;
+        }
+    </script>
 </body>
 </html>
